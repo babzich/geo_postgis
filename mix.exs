@@ -27,7 +27,7 @@ defmodule GeoPostgis.Mixfile do
 
   defp deps do
     [
-      {:geo, "~> 3.5"},
+      {:geo, git: "git@github.com:babzich/geo.git", branch: "addLineStringM"},
       {:postgrex, ">= 0.0.0"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:ecto, "~> 3.0", optional: true},
